@@ -1,12 +1,14 @@
-import ClassBaseCounter from "@/component/ClassBaseCounter";
-import store from "@/store";
+import Counter from "@/component/ReduxJsCounter";
+import store from "@/store/index-reduxjs";
 import { Provider } from "react-redux";
 
 const Home = () => {
   return (
-    <Provider store={store}>
-      <ClassBaseCounter />
-    </Provider>
+    <>
+      <Provider store={store}>
+        <Counter />
+      </Provider>
+    </>
   );
 };
 
